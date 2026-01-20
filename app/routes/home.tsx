@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home"
-import { Link, useLoaderData } from 'react-router'
+import { useLoaderData } from 'react-router'
 import PayjpCheckout from "../components/func/payjp-checkout"
 import type { PayjpCheckoutPayload, PayjpCheckoutErrorPayload } from "../components/func/payjp-checkout"
 
@@ -42,7 +42,7 @@ export default function Home() {
     <div className="payjpButtonArea">
       <div>function component</div>
       <PayjpCheckout {...payjpCheckoutProps} />
-      <div><Link to="/class" >class component</Link></div>
+      {/* <div><Link to="/class" >class component</Link></div> */}
       {/* <div><a href="/class">class component</a></div> */}
     </div>
   )
