@@ -41,9 +41,9 @@ export default function Home() {
   return (
     <div className="payjpButtonArea">
       <div>function component</div>
-      <div><Link to="/class" >class component</Link></div>
-      {/* <div><a href="/">class component</a></div> */}
       <PayjpCheckout {...payjpCheckoutProps} />
+      <div><Link to="/class" >class component</Link></div>
+      {/* <div><a href="/class">class component</a></div> */}
     </div>
   )
 }
