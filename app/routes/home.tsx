@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home"
 import { useLoaderData } from 'react-router'
-import PayjpCheckout from "../components/func/payjp-checkout"
-import type { PayjpCheckoutPayload, PayjpCheckoutErrorPayload } from "../components/func/payjp-checkout"
+import PayjpCheckout from "~/components/func/payjp-checkout"
+import type { PayjpCheckoutPayload, PayjpCheckoutErrorPayload } from "~/types"
 
 export function meta({}: Route.MetaArgs) {
   return [
