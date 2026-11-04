@@ -22,9 +22,7 @@ export default function Home() {
   const data = useLoaderData<Awaited<ReturnType<typeof loader>>>()
 
   const payjpCheckoutProps = {
-    dataKey: data.env.PAYJP_PUBLIC_KEY,
-    dataText: 'クレジットカードで支払う',
-    dataPartial: 'true',
+    data: { key: data.env.PAYJP_PUBLIC_KEY, text: 'クレジットカードで支払う', partial: 'true' },
     onCreatedHandler: onCreated,
     onFailedHandler: onFailed,
   }
